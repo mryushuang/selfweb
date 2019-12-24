@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			.box{
+				display: flex;
+				width: 100%;
+				align-items: center;
+				background-image: url(img/work_bg1.jpg);
+				background-size: 100%;
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				align-items: flex-start;
+			}
+		
+			.box>div{
+				display: flex;	
+			}
+			.left{
+				padding: 6%;
+				width: 35%;
+				font-size: 2em;
+				font-weight: 100;
+				color: white;
+				font-family:  "楷体","宋体","华文行楷";
+				flex-direction: row-reverse;
+				justify-content: space-around;
+			}
+			.left div{
+				width: 1em;
+				padding-top:1em;
+				align-items: flex-start;
+			}
+			.left .text2{
+				padding-top: 5em;
+			}
+			.left span{
+				color: red;
+				font-weight: 900;
+			}
+			.right{
+				width: 50%;
+				flex-direction: column;	
+				align-items: center;
+			}
+		    .right div{
+				width:70%;
+				border: solid white 0.5em;
+				margin: 3% 2%;
+				border-radius: 10px;
+				display: flex;
+				justify-content: center; 
+				align-items: center;
+				transition:1s;
+			}
+			.right div img{
+				width: 100%;
+			}
+			.right div:hover{
+				width: 100%;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="left">
+				<div class="text1"><h3><span>要努力</span>变的优秀 然后有选择工作的权利</h3></div>
+				<div class="text2"> 一份好的工作是男人的生命线 </div>
+				<div class="text3" style="padding-top: 5em;;">工作撑起他的眼界、生活、尊严与精神深度，决定了他是碌碌无为还是举足轻重。</div>
+			</div>
+			<div class="right">
+				<div class="work_img">
+				    <img src="img/zgc1.jpg"/>
+				</div>
+				<div class="work_img">
+					<img src="img/zgf1.jpg"/>
+				</div>
+				<div class="work_img">
+					<img src="img/ynsn1.jpg"/>
+				</div>
+				<div class="work_img">
+					<img src="img/ynsn2.jpg"/>
+				</div>
+				<div class="work_img">
+					<img src="img/nh1.jpg"/>
+				</div>
+				<div class="work_img">
+					<img src="img/nh2.jpg"/>
+				</div>
+				<div class="work_img">
+					<img src="img/tjkh3.jpg"/>
+				</div>
+				<div class="work_img">
+					<img src="img/tjkh5.jpg"/>
+				</div>
+				<div class="work_img">
+					<img src="img/tjkh6.jpg"/>
+				</div>
+			<!--	<div class="work_img"></div>-->
+			</div>
+		</div>
+	</body>
+</html>

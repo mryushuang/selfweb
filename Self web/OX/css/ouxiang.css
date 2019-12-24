@@ -1,0 +1,123 @@
+﻿            *{
+				padding: 0;
+				margin: 0;
+				list-style-type: none;
+				color: #D0D0D0;
+				font-size: 1em;
+			}
+			img{
+				cursor: pointer;
+			}
+			.box>div{
+				width:100%;
+				display: flex;
+			}
+			.box{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.nav{
+				width: 100%;
+				font-size: 1.5em;
+                padding: 1em ;
+			}
+			.main_text{
+				font-size: 1em;
+				color: white;
+				font-style: italic;
+				font-weight: 900;
+			}
+			.nav,.main{
+				background-color: #272727;
+			}
+			.nav:hover{
+				background-color: #FF8000;
+			}
+			/*导航栏样式*/
+			.big_img{
+				border-top: 5px solid #FF8000;
+			}
+			.big_img img{
+				width: 50%;
+			}
+			.big_img img:hover{
+				border: 0.2em solid white;
+				
+			}
+			.main{
+		        font-size: 1.3em;
+				align-items: center;
+				justify-content:center;
+				padding: 3em;	
+			}
+			.main h1:hover{
+				font-size: 1.8em;
+				background-color: #FF8000;
+				color: black;
+			}
+            .content_top {
+				margin: 0;
+				padding:1em;
+				justify-content: center;
+				color: black;
+				font-size: 1.5em;
+				font-weight: 600;
+			}
+			.content_bottom{
+				flex-wrap: wrap;	
+			}
+			.content_bottom{
+				padding: 5px 100px;
+				justify-content: center;
+				flex-wrap:wrap;
+				align-content: center;
+				padding-bottom: 50px;	
+			}
+			.content_bottom img{
+				margin: 10px; 
+				width: 30%;
+			}
+			.content_bottom img:hover{
+				box-shadow: 5px 2px 6px #00000078;
+			}
+			.bottom{
+				padding: 30px 100px;
+				background: #d0d0d0;
+				border-bottom: 5px solid #FF8000;
+				
+			}
+			.bottom div{
+				display: flex;
+				align-items: center;
+				/*padding: 50px 10px;*/
+			}
+			.bottom_left{
+				width: 60%;
+				padding: 1em;
+				font-size: 1.3em;
+			}
+			.bottom_right{
+				width: 40%;
+			}
+			.bottom_right img{
+				box-shadow: #00000063 10px 55px 20px 15px;
+				
+			}
+			.bottom p{
+			    color: #6c6c6c;
+			    margin-bottom: 20px;
+			    line-height: 1.7em;
+			}
+			/*bottom部分*/
+			.copyright{
+				background-color: black;
+				padding: 20px;
+			    justify-content:space-between;
+			}
+			.copyright span{
+				margin: 1px 70px;
+			}
+			.copyright span strong{
+			    color:#FF8000;
+			    font-weight: 100;
+			}

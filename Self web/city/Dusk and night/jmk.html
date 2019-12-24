@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				font-family:Arial,Helvetica,sans-serif;
+				flex-flow: wrap;
+				box-sizing: border-box;
+			}
+			.box{
+				width: 100%;
+				height: 100%;
+				/*background-color: #adb4b9;*/
+				background-color: white;
+			}
+			.content{
+				width:85%;
+				
+			}
+			.box,.content>div{
+				display: flex;
+				justify-content:center;
+			}
+			.nav{
+				font-size: 1.5em;
+				letter-spacing: 0.1em;
+				padding: 1em ;
+				font-weight: 100;
+			}
+			.nav span{
+				color: #006fbe;
+			}
+			.nav strong{
+				font-weight: 800;
+			}
+			.block span{
+				border: 0.1em solid #424242;
+				border-radius: 1em;
+				padding: 0.4em 1.5em;
+				margin: auto 0.8em;
+			}
+			.img{
+				margin:0.8em auto;
+				
+			}
+			.img div{
+				width: 45%;
+				padding: 1%;
+			}
+			.img img{
+				width: 100%;
+			}
+			img:hover{
+				border: 0.3em solid #006fbe;
+				box-shadow: #7f8b93 30px 40px 10px;
+				cursor: pointer;
+			}
+			.button button{
+				
+				/*background-image: linear-gradient(25deg, rgba(247, 183, 0, 0.46) 0%, rgba(247, 183, 0, 0.15) 43%, rgba(215, 163, 18, 0.1) 51%, rgb(40, 56, 114) 93%, rgb(13, 40, 129) 100%);*/
+				margin: 1em;
+				padding: 1.5em 3em;
+				background-color:#006fbe;
+				cursor: pointer;
+				color: white;
+				border: 0;
+				
+			}
+			button:hover{
+				background-color:white;
+				color: black;
+				border: 1px solid #006fbe ;
+				font-weight: bold;
+				box-shadow: slategray 10px 10px 1px;
+			}
+			.text{
+				flex-direction: column;
+				align-items: center;
+				color: black;
+				padding-bottom: 1em;
+				line-height: 1.5em;
+				font-size: 1.2em;
+			}
+			.text>div{
+				padding: 0.1em;
+			}
+			.text strong{
+				font-size: 2em;
+				color: #C11D20;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="content">
+				<div class="nav" id="text6"><strong>Scenery</strong><span>&nbsp; at the door</span>
+				</div>
+				<div class="block">
+					<span id="text1">Dusk</span>
+					<span id="text2">Night</span>
+				</div>
+				<div class="img">
+					<div>
+						<img src="img/jmk1.jpg"/>
+					</div>
+					<div>
+						<img src="img/jmk2.jpg"/>
+					</div>
+				</div>
+				<div class="button">
+					<button onclick="myFunction()">Chinese</button>
+				</div>
+				<div class="text">
+					<div id="text3">
+						<strong>“</strong>Some scenery is like some people, different time different beauty<strong>”</strong>   
+					</div>
+					<div id="text4">Some people are like some scenery, which can be met or not</div>
+					<div id="text5">————June 29, 2019</div>
+				</div>
+			</div>
+		</div>
+				<script type="text/javascript"> 
+			function myFunction()
+			{
+			 var jmk="家门口的风景";
+			 var left="黄昏";
+			 var right="夜晚"
+             var x="有些风景就像有些人，不同的时间不同的美丽";
+             var y="有些人就像有些风景，可遇不可求";
+             var z="———2019.6.29";
+			 document.getElementById("text1").innerHTML=left;
+	         document.getElementById("text2").innerHTML=right;
+	         document.getElementById("text3").innerHTML=x;
+	         document.getElementById("text4").innerHTML=y;
+	         document.getElementById("text5").innerHTML=z;
+	         document.getElementById("text6").innerHTML=jmk;
+			}
+			
+		</script>
+	</body>
+</html>

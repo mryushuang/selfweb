@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+			  padding: 0;
+			  margin: 0;
+			  box-sizing: border-box;
+			}
+			body{
+				background-image:url(img/self_bg1.jpg);
+				background-repeat: no-repeat;
+				/*background-attachment:fixed*/
+				background-size: 100%;
+				position: relative;
+			}
+			.box_big{
+				height:100%;
+				width:100%;
+				display: flex;
+				align-items:center;
+				justify-content:  flex-end;
+			}
+			.box{
+				border: 10px solid white;
+				border-left:none;
+				width:80%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				margin-top: 5%;	
+			}
+			.box>div{
+				display: flex;	
+			}
+			.top{
+			  
+				width: 100%;
+			}
+			.left{
+				width:40%;
+				height: 100%;
+			}
+			.right{
+				width:60%;
+				height: 100%;
+				font-size: 1.5em;
+				font-weight: bold;
+				padding: 2em;
+				color: white;
+			}
+			.right ul{
+				font-weight: normal;
+			}
+			.right div{
+				margin: 1em auto;
+			}
+			.right ul{
+				list-style-type: none;
+				line-height: 1.5em;
+				font-size:0.8em;
+			}
+
+			button{
+				padding: 1.5em 2em;
+				background-color:white;
+				cursor: pointer;
+				color:#006fbe;
+				border: 0;
+				font-weight: bold;
+				
+			}
+			button:hover{
+				background-color:#006fbe;
+				color: white;
+				border: 1px solid #006fbe ;
+				font-weight: bold;
+				box-shadow: white 10px 10px 10px;
+			}
+			.bottom{
+				width:100%;
+				display: flex;
+				padding: 1em;
+				color: white;
+			}
+			.bottom>div{
+				display: flex;
+				width:33.3%;
+				height:100%;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.bottom_text{
+				display: flex;
+				justify-content: center;
+				width:4em;
+				line-height:2.5em;
+				padding: 3em auto;
+				color: white;
+				font-weight: bold;
+				border: 1px solid white;
+				box-shadow: black 10px 10px 10px;
+				transition: width 1.5s cubic-bezier(.86,0,.07,1); 	
+			}
+			.bottom_text:hover{
+				width:100%;
+			}
+			img{
+				cursor: pointer;
+		        width:20%;
+				position: absolute;
+				top:6%;
+				left:32%;
+				border: 20px solid white;
+				transition: 4s;
+			}
+			#self_img{
+				animation: 10s myimg;
+				animation-iteration-count: 2;
+				animation-delay: 5s;
+				animation-direction: alternate;
+				animation-timing-function: ease;
+			}
+			@keyframes myimg{
+				0%{left:30%;top:6%;}
+				25%{left:80%;top:6%;}
+				50%{left:0%;top:40%;}
+				75%{left:0%;top:0%}
+				100%{left:30%;top:6%;}
+			}
+			img:hover{
+				box-shadow: white 10px 10px 10px;
+				transform: rotate(360deg);
+			}
+			a{
+				text-decoration: none;
+				color: white;
+			}
+			a:hover{
+				color: red;
+			}
+		</style>
+		<script type="text/javascript" src="js/zy_text.js">
+			
+		</script>
+	</head>
+	<body>
+		<div class="box_big">
+		<img src="img/self1.jpg"/  id="self_img" >
+		<div class="box">
+			<div class="top">
+				<div class="left"></div>
+				<div class="right">
+					<div class="right_text" id="text1">阳光小伙</div>
+					<div class="right_text" id="text2">余爽</div>
+					<div class="right_text" id="text3">
+						<ul>
+							<li>性别：男</li>
+							<li>家乡：<a href="https://baike.baidu.com/item/%E5%85%89%E5%B1%B1%E5%8E%BF/1742490?fromtitle=%E5%85%89%E5%B1%B1&fromid=11158307&fr=aladdin">河南省信阳市光山县</a></li>
+							<li>爱好:看书、交友、打羽毛球、跑步、旅游、听音乐</li>
+							<li>特长：从小就不知道自己擅长什么，所以就德智体美劳全面发展了</li>
+							<li>对自己的认识：有强烈的自我完善意识、较强的自我调节能力</li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="right_text">
+						<button onclick="shuai()">？</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bottom">
+				<div><div class="bottom_text" id="text4">和善</div></div>
+				<div><div class="bottom_text" id="text5">乐观</div></div>
+				<div><div class="bottom_text" id="text6">上进</div></div>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
